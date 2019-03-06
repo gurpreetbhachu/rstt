@@ -1,0 +1,314 @@
+/* ==== Global ==== */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ==== Nav ==== */
+.navbar{
+    font-size: 0.8rem;
+   /* background-color: rgba(31, 31, 31, 0.651); */
+}
+
+.navbar li {
+    display: inline;
+    padding-right: 20px;
+}
+.navbar li a:hover ~ hr {
+    width: 30px;
+    visibility: visible;
+}
+hr {
+    height: .25rem;
+    width: 5px;
+    margin: 0;
+    background: #2183da;
+    border: none;
+    transition: .3s ease-in-out;
+    visibility: hidden;
+  }
+
+.navbar-brand {
+    font-size: 25px;
+    padding-left: 5px;
+    color: #657d9e;
+    font-weight: 600;
+}
+
+.nav-link{
+   color: #657d9e;
+}
+
+.navbar-nav, .navbar-nav .nav-link:hover {
+    color: #2183da;
+}
+.mob-icon{
+    color: #657d9e;
+}
+
+/* ==== Home ==== */
+#rstlogo{
+   width: 80px;
+   transition: 0.4s;
+}
+
+.caption{
+    position: relative;
+    min-height: 80px;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.landing-img{
+    width: 100%;
+    min-height: 450px;
+    filter: blur(4px);
+}
+.caption h1{
+    color: #184177;
+    font-weight: bolder;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    bottom: auto;
+    transform: translateY(-50%);
+    max-width: 100%;
+    width: 100%;
+    font-size: 55px;
+    text-shadow: .1rem .1rem .8rem #313131b2;
+    font-family: 'Righteous', cursive;
+}
+.caption p{
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: auto;
+    bottom: auto;
+    transform: translateY(50%);
+    max-width: 100%;
+    width: 100%;
+    text-shadow: .1rem .1rem .8rem #252525b2;
+}
+
+
+/* ==== About ==== */
+.fix-bg{  
+    min-height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+.bg-1 {
+    background-image: url("../img/mis/f1.jpg");
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-3 {
+    background-image: url("../img/mis/bg3.jpeg");
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.aboutbox{
+   padding: 0;
+   background-color: rgba(240, 248, 255, 0.603);
+}
+
+.aboutbox p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+.about-img{
+    background-image: url(/img/mis/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.about-img1{
+    width: 100%;
+    height: 100%;
+}
+.para-centre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: .1rem .1rem .8rem #313131b2;
+    color: #184177;
+}
+
+/* ==== Service ==== */
+#service{
+text-align: center;
+margin: 80px 80px;
+}
+.service-icon img{
+    width: 65px;
+    margin-bottom: 25px;
+}
+.heading-underline-service {
+    width: 8rem;
+    height: .3rem;
+    background-color: #184177;
+    margin: 0 auto 3.5rem;
+}
+.service-heading h4{
+    font-weight: bold;
+    color: #184177;
+}
+
+/* ==== Work ==== */
+.sliderbox{
+    padding: 0;
+}
+
+/* ==== Contact ==== */
+#contact{
+    padding-top: 80px;
+    background-color: #232323;
+    padding-bottom: 40px;
+}
+.social-icon{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.s-icon{
+   font-size: 50px;
+   margin-right: 15px;
+   
+}
+.add{
+    color: aliceblue;
+    font-size: 16px;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color: #184177;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .con-form {
+    border-radius: 5px;
+    background-color: #1b1b1b8a;
+    padding: 20px;
+  }
+
+  .footer{
+      text-align: center;
+      background-color: black;
+      padding-bottom: 0;
+  }
+  .footer p{
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+/* ----- All Media ----- */
+/* Large desktop */
+
+@media (min-width: 1200px) {
+    
+    /* OK */
+}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .navbar-brand {
+        color: #657d9e;
+    }
+    .navbar{
+        text-align: center;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+    .navbar{
+        text-align: center;
+    }
+    .navbar li a:hover ~ hr {
+        visibility: hidden;
+    }
+    #rstlogo{
+        display: none;
+     }
+    
+    .caption h1{
+        font-size: 40px;
+    }
+    .new-fix{
+        min-height: 50vh;
+    }
+    .navbar-brand {
+        color: #657d9e;
+    }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    .navbar{
+        text-align: center;
+        background-color: white;
+    }
+    .navbar li a:hover ~ hr {
+        visibility: hidden;
+    }
+    #rstlogo{
+        display: none;
+     }
+    
+    .caption h1{
+        font-size: 30px;
+        color: #184177;
+    }
+    .caption p{
+        
+        color: rgba(0, 0, 0, 0.774);
+    }
+    .landing-img{
+        visibility: hidden;
+    }
+    .new-fix{
+        min-height: 5vh;
+    }
+    .navbar-brand {
+        color: #657d9e;
+    }
+}
